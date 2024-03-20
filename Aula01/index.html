@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ana</title>
+
+    <style>
+      body {
+        background: #467bc6;
+        color: #18335b;
+        text-shadow: 5px 5px 6px #084260;
+        text-align: left;
+      }
+      h1 {
+        background: #176693;
+        color: #020d26;
+      }
+
+      p {
+        text-shadow: none;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body contenteditable>
+    <h1>Aula 1 - HTML| CCS| JS</h1>
+    <h2>Onde ela estuda?</h2>
+    <p>A ana clara estuda no sesi e no senai</p>
+    <!-- como mudar a cor de fundo
+    
+      document.getElementsByTagName("body")[0]. style.background = "#09745a" -->
+
+    <h3>Alerta mensagem!</h3>
+    <p style="text-align: center">
+      <button onclick="Alerta()" style="background: rgb(43, 54, 152)">
+        Alerta
+      </button>
+    </p>
+
+    <h4>Alterar a cor do fundo do site clicando em uma das cores abaixo:</h4>
+
+    <p style="text-align: center">
+      <button onclick="vermelho()" style="background: red">vermehlo</button>
+
+      <button onclick="azul()" style="background: rgb(55, 0, 255)">azul</button>
+
+      <button onclick="verde()" style="background: rgb(6, 255, 47)">
+        verde
+      </button>
+      <button onclick="rosa()" style="background: rgb(216, 18, 147)">
+        rosa
+      </button>
+    </p>
+  </body>
+  <script>
+    console.log("olá Mundo!");
+    function Alerta() {
+      var nome = prompt("Olá, inforforme seu nome:");
+      alert(`Olá ${nome}!`);
+    }
+    function vermelho() {
+      document.getElementsByTagName("body")[0].style.background = "red";
+    }
+    function azul() {
+      document.getElementsByTagName("body")[0].style.background = "blue";
+    }
+    function verde() {
+      document.getElementsByTagName("body")[0].style.background = "green";
+    }
+    function rosa() {
+      document.getElementsByTagName("body")[0].style.background = "pink";
+    }
+    // ao invez de colocar "function" e esse role tod em tudo, Usa 
+    // ex: azul = () => {
+
+    // } 
+
+  </script>
+</html>
